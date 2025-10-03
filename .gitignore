@@ -1,0 +1,76 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build output
+dist/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vscode-test/
+.claude/
+
+# Python virtual environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Test coverage
+coverage/
+*.lcov
+.nyc_output
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Development files (keep planning docs in repo)
+# These are excluded from npm but kept in git
+scripts/find-endpoints.js
+
+# Large files (excluded from npm, optional for git)
+openapi.json
+
+# Editor backup files
+*.bak
+*.orig
+
+# Development documentation (keep locally, exclude from GitHub)
+docs/FOCUSED_PLAN.md
+docs/GETTING_STARTED.md
+docs/GIT_SETUP.md
+docs/IMPLEMENTATION_PLAN.md
+docs/NPM_PUBLISHING_GUIDE.md
+docs/OPENAPI_STRATEGY.md
+docs/PROJECT_SUMMARY.md
+docs/PUBLISH_CHECKLIST.md
+docs/QUICK_REFERENCE.md
+docs/READY_TO_PUBLISH.md
+docs/REBUILD_PLAN.md
+docs/SECURITY_FIXES.md
+docs/TEST_REPORT.md

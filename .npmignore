@@ -1,0 +1,54 @@
+# Source files
+credentials/**/*.ts
+nodes/**/*.ts
+!dist/**
+
+# Documentation (keep only README.md for npm)
+FOCUSED_PLAN.md
+IMPLEMENTATION_PLAN.md
+OPENAPI_STRATEGY.md
+REBUILD_PLAN.md
+PROJECT_SUMMARY.md
+GETTING_STARTED.md
+QUICK_REFERENCE.md
+
+# Config files
+tsconfig.json
+.prettierrc
+.eslintrc.js
+gulpfile.js
+
+# Scripts and tools
+scripts/
+
+# Large files
+openapi.json
+
+# Development files
+.vscode/
+.idea/
+.venv/
+.claude/
+
+# Git files
+.git/
+.gitignore
+.gitattributes
+
+# Node modules
+node_modules/
+
+# Build artifacts
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test files
+test/
+*.test.ts
+*.spec.ts

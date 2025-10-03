@@ -1,0 +1,72 @@
+{
+  "name": "n8n-nodes-tikhub",
+  "version": "1.0.3",
+  "description": "n8n community node for TikHub API - TikTok, Instagram, YouTube, Twitter integration with 28 endpoints",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "tikhub",
+    "tiktok",
+    "instagram",
+    "youtube",
+    "twitter",
+    "social-media",
+    "api",
+    "automation",
+    "workflow"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/TikHub/TikHub_n8n_Integration",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TikHub/TikHub_n8n_Integration.git"
+  },
+  "author": {
+    "name": "TikHub",
+    "email": "tikhub.io@proton.me",
+    "url": "https://github.com/TikHub"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "eslint nodes credentials --ext .ts",
+    "lintfix": "eslint nodes credentials --ext .ts --fix",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/TikHubApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/TikHub/TikHub.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-n8n-nodes-base": "^1.16.1",
+    "gulp": "^5.0.1",
+    "n8n-core": "^1.64.0",
+    "n8n-node-dev": "^1.112.1",
+    "n8n-workflow": "^1.64.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "n8n-workflow": ">=1.64.0"
+  },
+  "overrides": {
+    "form-data": "^4.0.1"
+  }
+}
