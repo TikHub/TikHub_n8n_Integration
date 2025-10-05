@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-tikhub",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "n8n community node for TikHub API - TikTok, Instagram, YouTube, Twitter integration with 28 endpoints",
   "keywords": [
     "n8n-community-node-package",
