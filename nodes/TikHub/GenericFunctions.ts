@@ -30,7 +30,7 @@ export async function tikHubApiRequest(
 	};
 
 	try {
-		return await this.helpers.requestWithAuthentication.call(this, 'tikHubApi', options);
+		return await this.helpers.httpRequestWithAuthentication.call(this, 'tikHubApi', options);
 	} catch (error: any) {
 		// Enhanced error handling
 		if (error.response?.body) {
